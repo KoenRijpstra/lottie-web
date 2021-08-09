@@ -41,7 +41,7 @@ function SVGEffects(elem) {
   }
   if (count) {
     elem.globalData.defs.appendChild(fil);
-    elem.layerElement.setAttribute('filter', 'url(' + locationHref + '#' + filId + ')');
+    elem.layerElement.setAttribute('style', 'filter:url(' + locationHref + '#' + filId + ')');
   }
   if (this.filters.length) {
     elem.addRenderableComponent(this);
